@@ -1,13 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation';
 import { products } from '@/data/products';
 import ProductCard from '@/components/ProductCard';
 import { Filter, Search, Grid, List } from 'lucide-react';
 
 export default function ProductsPage() {
-  const searchParams = useSearchParams();
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');

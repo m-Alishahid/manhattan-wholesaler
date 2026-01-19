@@ -1,10 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { Suspense, useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Mail, Phone, MapPin, Send, Clock, Shield, Globe, Zap } from 'lucide-react';
 
-export default function ContactPage() {
+export const dynamic = 'force-dynamic';
+
+function ContactPageInner() {
   const searchParams = useSearchParams();
   const [formData, setFormData] = useState({
     name: '',
@@ -189,5 +191,13 @@ export default function ContactPage() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function ContactPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ContactPageInner />
+    </Suspense>
   );
 }
