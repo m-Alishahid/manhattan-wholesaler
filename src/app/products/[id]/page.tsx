@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { products } from '@/data/products';
 import Image from 'next/image';
 import { ArrowLeft, ShoppingCart, MessageSquare, Star, Shield, Truck, Award } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 export default function ProductDetailPage() {
   const params = useParams();
@@ -34,7 +35,7 @@ export default function ProductDetailPage() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...product, quantity }),
     });
-    alert('Added to cart!');
+    toast.success('Added to cart!');
   };
 
   return (

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Product } from '@/data/products';
+import toast from 'react-hot-toast';
 
 interface ProductCardProps {
   product: Product;
@@ -13,9 +14,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(product),
     }).then(() => {
-      alert('Added to cart!');
+      toast.success('Added to cart!');
     }).catch(() => {
-      alert('Failed to add to cart. Please try again.');
+      toast.error('Failed to add to cart. Please try again.');
     });
   };
 

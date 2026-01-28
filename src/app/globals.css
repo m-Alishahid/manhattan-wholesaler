@@ -5,6 +5,11 @@
   src: url('/fonts/MicroExtendFLF.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Allura';
+  src: url('/fonts/Allura-Regular.woff2') format('woff2');
+}
+
 :root {
   --primary: #A63931; /* Primary Red */
   --primary-hover: #8a2e26; /* Darker red for hover states */
@@ -73,10 +78,7 @@ p {
   color: var(--foreground-light);
 }
 
-.tagline {
-  font-family: var(--font-allura), cursive;
-  color: #75C043;
-}
+
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {

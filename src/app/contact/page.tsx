@@ -3,6 +3,7 @@
 import { Suspense, useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Mail, Phone, MapPin, Send, Clock, Shield, Globe, Zap } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 export const dynamic = 'force-dynamic';
 
@@ -24,7 +25,7 @@ function ContactPageInner() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    alert('Thank you for your inquiry. We will get back to you soon!');
+    toast.success('Thank you for your inquiry. We will get back to you soon!');
     setFormData({ name: '', email: '', message: '' });
   };
 
