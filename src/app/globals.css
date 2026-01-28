@@ -1,16 +1,27 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'MicroExtendFLF';
+  src: url('/fonts/MicroExtendFLF.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Allura';
+  src: url('/fonts/Allura-Regular.woff2') format('woff2');
+}
+
 :root {
-  --primary: #eb2f3d; /* Red from user specification */
-  --primary-hover: #d41e2c; /* Darker red for hover states */
+  --primary: #A63931; /* Primary Red */
+  --primary-hover: #8a2e26; /* Darker red for hover states */
   --primary-light: #fef2f2; /* Very light red background */
   --secondary: #f8fafc; /* Light gray background */
   --accent: #ffffff; /* White */
-  --foreground: #1e293b; /* Dark slate text */
+  --foreground: #010101; /* Black for main text */
   --foreground-light: #64748b; /* Light gray text */
   --background: #ffffff;
-  --accent-red: #dc2626; /* Darker red for accents */
-  --dark-red: #b91c1c; /* Dark red for text */
+  --accent-red: #A63931; /* Primary Red for accents */
+  --dark-red: #A63931; /* Primary Red for text */
+  --green: #75C043; /* Green for tagline and accents */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -38,9 +49,15 @@ body {
 
 /* Typography improvements */
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'MicroExtendFLF', sans-serif;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.025em;
+}
+
+.tagline {
+  font-family: 'Allura', cursive;
+  color: #75C043;
 }
 
 h1 {

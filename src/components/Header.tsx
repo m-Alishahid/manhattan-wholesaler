@@ -39,14 +39,14 @@ const Header = () => {
               priority
             />
           </div>
-          <div className="flex flex-col justify-center leading-none">
+          {/* <div className="flex flex-col justify-center leading-none">
             <span className="text-xl md:text-2xl font-black tracking-tighter text-foreground group-hover:text-primary transition-colors">
              MANHATTAN<span className="text-primary">.</span>
             </span>
             <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.15em] text-foreground-light mt-0.5">
               Wholesales Importers Inc.
             </span>
-          </div>
+          </div> */}
         </Link>
 
         {/* Desktop Nav */}
