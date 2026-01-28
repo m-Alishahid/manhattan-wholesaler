@@ -29,25 +29,18 @@ const Header = () => {
       <div className="container flex justify-between items-center">
         
         {/* Logo Section */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="relative w-10 h-10 flex-shrink-0">
-            <Image 
-              src="/logo.png" 
-              alt="M" 
-              fill 
-              className="object-contain"
-              priority
-            />
-          </div>
-          {/* <div className="flex flex-col justify-center leading-none">
-            <span className="text-xl md:text-2xl font-black tracking-tighter text-foreground group-hover:text-primary transition-colors">
-             MANHATTAN<span className="text-primary">.</span>
-            </span>
-            <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.15em] text-foreground-light mt-0.5">
-              Wholesales Importers Inc.
-            </span>
-          </div> */}
-        </Link>
+         <Link href="/" className="flex items-center space-x-3 mb-6 group">
+              <Image
+                src="/logo.png"
+                alt="MANHATTAN Logo"
+                width={220}
+                height={80}
+                // className="h-16 w-auto brightness-5000 invert group-hover:scale-105 transition-transform"
+              />
+              {/* <div>
+                <p className="tagline text-lg italic" style={{ color: '#75C043' }}>Elegancy, Quality, Affordable</p>
+              </div> */}
+            </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center space-x-1 bg-secondary/50 p-1 rounded-full border border-gray-100">

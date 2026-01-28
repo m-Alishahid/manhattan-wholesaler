@@ -26,12 +26,12 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-5 pt-12">
         <div className="absolute top-10 left-10 w-32 h-32 bg-primary rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 right-10 w-40 h-40 bg-primary/30 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative container mx-auto px-4 py-16">
+      <div className="relative container mx-auto px-4 pt-24 pb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
@@ -39,18 +39,17 @@ const Footer = () => {
               <Image
                 src="/logo.png"
                 alt="MANHATTAN Logo"
-                width={120}
-                height={40}
-                className="h-8 w-auto brightness-0 invert group-hover:scale-105 transition-transform"
+                width={220}
+                height={80}
+                className="h-16 w-auto brightness-0 invert group-hover:scale-105 transition-transform"
               />
-              <div>
-                <h3 className="text-2xl font-black text-primary">MANHATTAN</h3>
-                <p className="text-sm text-gray-400">Wholesales Importers Inc.</p>
-              </div>
+              {/* <div>
+                <p className="tagline text-lg italic" style={{ color: '#75C043' }}>Elegancy, Quality, Affordable</p>
+              </div> */}
             </Link>
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
               Your trusted global partner for premium medical and dental accessories.
-              Delivering elegance, quality, and affordability since 2003.
+              Delivering <span style={{ color: '#75C043' }}>elegance</span>, <span style={{ color: '#A63931' }}>quality</span>, and affordability since 2003.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
