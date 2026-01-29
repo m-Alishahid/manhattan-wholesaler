@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ShieldCheck, Globe2, Zap, Award, Users, Clock, ArrowRight, Star } from 'lucide-react';
+import { ShieldCheck, Globe2, Zap, Award, Users, Clock, ArrowRight, Star, Stethoscope } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -44,7 +44,9 @@ export default function AboutPage() {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl p-8 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-6xl mb-4">🏥</div>
+                  <div className="text-primary mb-4 flex justify-center">
+                    <Stethoscope size={64} />
+                  </div>
                   <h3 className="text-2xl font-bold mb-2">20+ Years</h3>
                   <p className="text-foreground-light">Serving Healthcare Professionals</p>
                 </div>

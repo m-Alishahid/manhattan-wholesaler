@@ -119,7 +119,9 @@ export default function ProductsPage() {
         {/* Products Grid/List */}
         {filteredProducts.length === 0 ? (
           <div className="text-center py-16">
-            <div className="text-6xl mb-6">🔍</div>
+            <div className="text-primary mb-6 flex justify-center">
+              <Search size={64} />
+            </div>
             <h2 className="text-2xl font-bold mb-4 text-gray-800">No products found</h2>
             <p className="text-gray-600 mb-8">
               Try adjusting your search or filter criteria.

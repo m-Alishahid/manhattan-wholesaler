@@ -175,7 +175,7 @@ export default function Home() {
             <p className="text-xl text-foreground-light mb-10 max-w-2xl mx-auto">
               Join hundreds of medical professionals who trust Manhattan for their daily clinical needs.
             </p>
-            <Link href="/contact" className="btn-primary !px-12 !py-5 text-xl">
+            <Link href="/contact" className="btn-primary px-12 !py-5 text-xl">
               Contact Us Today
             </Link>
           </div>
