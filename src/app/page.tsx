@@ -19,11 +19,11 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section 
-        className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden" 
+      <section
+        className="relative pt-24 pb-16 sm:pt-32 sm:pb-20 md:pt-48 md:pb-32 overflow-hidden"
         style={{
-          backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(/dental3.jpg)', 
-          backgroundSize: 'cover', 
+          backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(/dental3.jpg)',
+          backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
       >
@@ -32,12 +32,15 @@ export default function Home() {
             <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
             Professional Medical Imports
           </div>
-          
-          <h1 className="max-w-4xl mx-auto mb-6 font-black leading-tight text-foreground animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            The Gold Standard in <br />
-            <span className="text-primary italic">Medical Accessories.</span>
+
+          <h1
+            className="max-w-4xl mx-auto mb-6 font-black leading-tight text-primary animate-fade-in-up uppercase tracking-wide"
+            style={{ animationDelay: '0.1s' }}
+          >
+            Surgical Medical Imports
           </h1>
-          
+
+
           {/* Trusted Global Partners line - Set to Pure Black */}
           <p className="text-black font-medium max-w-2xl mx-auto text-lg md:text-xl mb-10 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             Trusted global partners for premium dental and medical supplies. Elevating healthcare standards through quality and precision for over 20 years.
@@ -125,7 +128,7 @@ export default function Home() {
           <h2 className="mb-4">Why Professionals Choose Us</h2>
           <div className="h-1.5 w-20 bg-primary mx-auto rounded-full"></div>
         </div>
-        
+
         <div className="container grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             { icon: <ShieldCheck size={32} />, title: "Quality Assured", desc: "All products meet international medical safety standards and certifications." },

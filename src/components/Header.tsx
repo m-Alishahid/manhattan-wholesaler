@@ -35,11 +35,9 @@ const Header = () => {
                 alt="MANHATTAN Logo"
                 width={220}
                 height={80}
-                // className="h-16 w-auto brightness-5000 invert group-hover:scale-105 transition-transform"
+                className="w-32 sm:w-36 md:w-40 h-auto"
               />
-              {/* <div>
-                <p className="tagline text-lg italic" style={{ color: '#75C043' }}>Elegancy, Quality, Affordable</p>
-              </div> */}
+
             </Link>
 
         {/* Desktop Nav */}
